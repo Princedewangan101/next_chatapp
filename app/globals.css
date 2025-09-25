@@ -1,10 +1,19 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
+  --color-bg: #0a0a0a;
+  --color-gray: #94A3B8;
+  --color-pink: #F43F5E;
+  --color-teal: #14B8A6;
+  --color-voi: #6366F1;
+
+
+}
+/* shadow-blue-600 shadow-[41px_41px_1px_10px] */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -14,6 +23,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* --background: #3c096c; */
+    /* --background: #3c096c; */
+    /* --background: #5a189a; */
+    /* --background: #6d0ccd; */
+    /* --background: #7f00ff; */
+    /* --background: #e6e6fa; */
     --background: #0a0a0a;
     --foreground: #ededed;
   }
@@ -22,5 +37,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+ 
 }
+
+.fourm_animation {
+  transform: rotateX('30');
+}
+/* .my-radial-bg {
+  background: radial-gradient(circle at bottom left, #ff2e97, #9d4edd, #0a0a0a);
+} */
