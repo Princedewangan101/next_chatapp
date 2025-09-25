@@ -1,5 +1,7 @@
+import Btn from "@/components/Btn";
 import Image from "next/image";
 import Link from "next/link";
+
 
 type Topic = {
   text: string;
@@ -90,8 +92,10 @@ export default function TopicsList() {
                     {topic.desc}
                   </p>
                   <Link href={`/fourm/${topic.slug}`}>
-                    <div>
-                      <button className=" mt-5 border px-2.5 py-1 rounded-md  ">Discuss</button>
+                  
+                    <div className="z-10">
+                      <Btn />
+
                     </div>
                   </Link>
 
