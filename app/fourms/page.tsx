@@ -1,6 +1,7 @@
 import Btn from "@/components/Btn";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
 
 type Topic = {
@@ -94,7 +95,7 @@ export default function TopicsList() {
                   <Link href={`/fourm/${topic.slug}`}>
                   
                     <div className="z-10">
-                      <Btn />
+                      <Btn btn_text = "Discuss" />
 
                     </div>
                   </Link>
@@ -108,3 +109,8 @@ export default function TopicsList() {
     </>
   );
 }
+
+// export const metadata: Metadata = {
+//   title: `Fourms - ${topic.slug} Discussion`,
+//   description: "",
+// };
